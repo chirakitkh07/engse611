@@ -2,63 +2,145 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>HTML Basic Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lab</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset and global styles */
+        * {
             margin: 0;
-            display: flex;
+            padding: 0;
+            box-sizing: border-box;
         }
-        nav a {
-            display: block;
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+        }
+
+        /* Container layout */
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 240px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
             text-decoration: none;
-            margin: 10px 0;
+            color: #ecf0f1;
+            font-size: 1rem;
+            padding: 8px 12px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        nav a:hover {
-            color: #84a5cb;
+        .sidebar ul li a:hover {
+            background-color: #34495e;
         }
-        main{
+
+        /* Content area styles */
+        .content {
             flex: 1;
             padding: 20px;
         }
-        header{
+        .header {
             text-align: center;
-            padding: 10px 0;
-            background-color: #3107af;
-            color: white;
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 2rem;
         }
-        footer {
+        .main-image {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .main-image img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .description {
             text-align: center;
-            padding: 10px 0;
-            background-color: #f4f4f4;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 1.1rem;
+            margin: 10px 0;
         }
-    
-
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            border-top: 1px solid #34495e;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <!-- nav menu here-->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="about.html" target="_blank">About Me</a></li>
+                <li><a href="myduck.html">My Duck</a></li>
+                <li><a href="hobby.html">My Hobby</a></li>
+            </ul>
+        </div>
 
-    </nav>
-    <main>
-        <!--main here-->
-        <header>
-            <h1>Welcome To My Lap</h1>
-        </header>
-    </main>
-    <footer>
-        <!--footer here-->
-    </footer>
-    <ul>
-        <a href="about.html">About</a>
-        <a href="hobby.html">Hobby</a>
-        <a href="myduck.html">My Duck</a>
-    </ul>
+        <!-- Main Content -->
+        <div class="content">
+            <div class="header">
+                Welcome to My Lab
+            </div>
+            <div class="main-image">
+                <img src="https://i.pinimg.com/736x/58/7b/57/587b57f888b1cdcc0e895cbdcfde1c1e.jpg" alt="My Cat">
+            </div>
+            <p class="description">
+                This is the main content of the page. Click on the menu items to navigate to different sections.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Contact me: <a href="mailto:example@example.com">example@example.com</a></p>
+        <p>
+            Follow me on:
+            <a href="#">X</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+        <p>&copy; 2024 My Lab</p>
+    </div>
 </body>
 </html>
+
