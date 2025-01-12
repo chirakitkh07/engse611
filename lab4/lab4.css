@@ -1,0 +1,175 @@
+/* Reset */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #795345;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar img {
+    width: 150px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://i.pinimg.com/originals/76/2e/24/762e24c1f1722e07c32ff1d7ed9e5bbf.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Info Section */
+.info {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.info-header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.box {
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box-text {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Quote Section */
+.quote {
+    background-color: #67493e;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.quote h3 {
+    font-size: 2rem;
+}
+
+/* CTA Section */
+.CTA {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.CTA .container-text h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.CTA .CTA-secondary-text {
+    margin-bottom: 1.5rem;
+}
+
+.CTA-button {
+    background: #795345;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.CTA-button:hover {
+    background-color: #9c7060;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
