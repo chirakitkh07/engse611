@@ -1,0 +1,66 @@
+/* เปลี่ยนสีพื้นหลังและข้อความ */
+body {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ตกแต่งหัวข้อ */
+h1 {
+    color: #87CEFA;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: #4A90E2;
+    font-size: 36px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* ตกแต่งลิสต์ */
+ul {
+    list-style-type: square;
+    color: #ffcc00;
+}
+
+ol {
+    list-style-type: decimal;
+    color: #ffcc00;
+}
+
+/* เปลี่ยนสไตล์ของข้อความลิงก์ */
+a {
+    color: #FF6347;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ตกแต่งรูปภาพ */
+img {
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* จัดระยะห่างของ Mood Images */
+.mood-images {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* เพิ่มเส้นขอบและระยะห่างสำหรับแต่ละ section */
+.my-section {
+    border: 1px solid #ffcc00;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #444444;
+}
