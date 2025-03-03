@@ -1,9 +1,10 @@
-//444
+// This is a single line of code
 
 /*
-//Multi-libe comment
+Multi-line comment
 console.log(100);
 
+console.log('Hello World');
 
-//888
+console.log(20, 'Hello', true);
 */

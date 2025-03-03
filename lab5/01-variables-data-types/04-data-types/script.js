@@ -1,5 +1,3 @@
-
-
 // String
 const firstName = 'Sara';
 
@@ -9,16 +7,13 @@ const temp = 98.9;
 
 // Boolean
 const hasKids = true;
-console.log(hasKids);
 
 // Null
 const aptNumber = null;
-console.log(aptNumber);
 
 // Undefined
 // let score;
 const score = undefined;
-console.log(score);
 
 // Symbol
 const id = Symbol('id');
@@ -41,22 +36,9 @@ function sayHello() {
 const output = sayHello;
 
 console.log(output, typeof output);
-console.log(output);
-
 
 // More info on why typeof null == object
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null
 
 //  More info on the "function object" type
 // https://262.ecma-international.org/5.1/#sec-11.4.3
-
-
-let num1=1.2;
-let str='514';
-
-console.log(num1, typeof num1);
-console.log(str, typeof str);
-console(parent(str), typeof PageTransitionEvent(str));
-console.log(num1.toString(),type num1.toString);
-
-
